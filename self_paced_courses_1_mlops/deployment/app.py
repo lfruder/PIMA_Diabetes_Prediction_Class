@@ -5,7 +5,7 @@ import os
 
 # Load the model directly from the repo (Streamlit Cloud clones the whole repo,
 # so the model file committed by the Github Actions pipeline is already on disk)
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "model", "best_pima_diabetes_model_v1.joblib")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "model", "best_pima_diabetes_model_v1.joblib")
 model = joblib.load(MODEL_PATH)
 
 # Streamlit UI for PIMA Diabetes Prediction
